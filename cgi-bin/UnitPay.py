@@ -10,8 +10,6 @@ import copy
 from unitpay_lib import *
 
 class UnitPay:
-	formUrl = 'https://unitpay.ru/pay/'
-	apiUrl = 'https://unitpay.ru/api';
 	secretKey = ''
 	supportedUnitpayMethods = ['initPayment', 'getPayment']
 	requiredUnitpayMethodsParams = {'initPayment' : ['desc', 'account', 'sum'],'getPayment' : ['paymentId']}
@@ -23,7 +21,9 @@ class UnitPay:
         '52.19.56.234',
         '127.0.0.1' # for debug
     ];
-	def __init__(self, secretKey):
+	def __init__(self, domain, secretKey):
+	    self.formUrl = 'https://' + domain + '/pay/'
+	    self.apiUrl = 'https://' + domain + '/api'
 		self.secretKey = secretKey
 	def form( self, publicKey, summ, account, desc, currency='RUB', locale='ru'):
 		params = {

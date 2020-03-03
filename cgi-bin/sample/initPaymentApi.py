@@ -6,7 +6,7 @@ sys.path.append(os.path.realpath(os.path.abspath(os.path.join(os.path.split(insp
 from orderInfo import *
 from UnitPay import * 
 
-unitPay = UnitPay( secretKey ) 
+unitPay = UnitPay( domain, secretKey )
 
 try:
     response = unitPay.api('initPayment', {

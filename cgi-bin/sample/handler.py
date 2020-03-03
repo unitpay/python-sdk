@@ -12,7 +12,7 @@ from UnitPay import *
 print ('Content-Type: application/json')
 print()
 
-unitpay = UnitPay( secretKey )
+unitpay = UnitPay( domain, secretKey )
 try:
 
     unitpay.checkHandlerRequest()

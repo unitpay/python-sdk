@@ -1,5 +1,6 @@
 
 # Project Data
+domain     = 'unitpay.money' # Your current domain: unitpay.money or unitpay.ru
 projectId  = 9922
 secretKey  = 'b444b19ef5395455ebbr2ee60576d3fc'
 publicId   = '9922-2bfc2'

@@ -6,7 +6,7 @@ sys.path.append(os.path.realpath(os.path.abspath(os.path.join(os.path.split(insp
 from orderInfo import *
 from UnitPay import * 
 
-unitpay = UnitPay( secretKey )
+unitpay = UnitPay( domain, secretKey )
 redirectUrl = unitpay.form( publicId, orderSum, orderId, orderDesc, orderCurrency )
 
 print ('Content-Type: text/html')
