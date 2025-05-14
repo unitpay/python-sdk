@@ -16,6 +16,7 @@ class UnitPay:
 	supportedPartnerMethods = ['check', 'pay', 'error'];
 	supportedUnitpayIp = [
         '31.186.100.49',
+	'51.250.20.9',
         '52.29.152.23',
         '52.19.56.234',
         '127.0.0.1' # for debug
